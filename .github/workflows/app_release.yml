@@ -1,0 +1,12 @@
+name: "App release"
+on:
+  release:
+    types:
+      - released
+jobs:
+  app-release:
+    uses: FLECS-Technologies/app-sdk/.github/workflows/app_release.yml@main
+    secrets: inherit
+    with:
+      release-tag: ${{ github.event.release.tag_name }}
+      app-version: ${{ github.event.release.tag_name }}
