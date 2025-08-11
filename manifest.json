@@ -5,6 +5,13 @@
     "version": "##VERSION##",
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.mqtt-bridge",
-    "multiInstance": false
+    "multiInstance": false,
+    "env":[
+        "LOGLEVEL=info",
+        "LOGFILE=mqtt"
+    ],
+    "volumes":[
+        "logs:/var/log/hp",
+        "/certs:/app/certs"
     ]
 }
