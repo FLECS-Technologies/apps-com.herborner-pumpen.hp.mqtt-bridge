@@ -7,11 +7,9 @@
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.mqtt-bridge",
     "multiInstance": false,
     "env":[
-        "LOGLEVEL=info",
-        "LOGFILE=mqtt"
+        "LOGLEVEL=warning"
     ],
     "volumes":[
-        "logs:/var/log/hp",
-        "/certs:/app/certs"
+        "data:/app/data"
     ]
 }
