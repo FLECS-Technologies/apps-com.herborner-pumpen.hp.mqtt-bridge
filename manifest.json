@@ -13,7 +13,8 @@
         "/dev/net/tun" 
     ],
     "env":[
-        "LOGLEVEL=notice"
+        "LOGLEVEL=notice",
+        "FLECS_API_ADDRESS=172.21.0.1:8081"
     ],
     "volumes":[
         "data:/app/data"
