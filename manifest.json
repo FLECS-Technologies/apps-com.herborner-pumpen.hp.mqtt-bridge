@@ -6,8 +6,14 @@
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.mqtt-bridge",
     "multiInstance": false,
+    "capabilities": [ 
+        "NET_ADMIN" 
+    ],
+    "devices": [ 
+        "/dev/net/tun" 
+    ],
     "env":[
-        "LOGLEVEL=warning"
+        "LOGLEVEL=notice"
     ],
     "volumes":[
         "data:/app/data"
