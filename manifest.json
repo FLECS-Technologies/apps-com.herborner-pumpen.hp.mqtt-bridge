@@ -6,7 +6,7 @@
     "revision": "0",
     "image": "flecs.azurecr.io/com.herborner-pumpen.hp.mqtt-bridge",
     "multiInstance": false,
-    "editors": [{  "name": "Modbus Status Viewer",  "port": 9331,  "supportsReverseProxy": true}],
+    "editors": [{  "name": "MQTT Status Viewer",  "port": 9331,  "supportsReverseProxy": true}],
     "capabilities": [ 
         "NET_ADMIN" 
     ],
